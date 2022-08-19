@@ -14,6 +14,7 @@ function Content() {
       );
       const data = await res.json();
       const teamsData = data.teams;
+      setFilteredTeams(teamsData);
       setTeamsArray(teamsData);
     }
 
